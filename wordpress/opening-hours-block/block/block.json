@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ayaan/opening-hours",
+	"version": "1.0.0",
+	"title": "Opening Hours",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "Your weekly opening hours, with today highlighted and a live Open now or Closed badge in the site's time zone.",
+	"keywords": [ "hours", "open", "timings", "schedule", "business hours" ],
+	"textdomain": "opening-hours-block",
+	"attributes": {
+		"hours": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"open": { "type": "string" },
+					"close": { "type": "string" },
+					"closed": { "type": "boolean" }
+				}
+			},
+			"default": [
+				{ "open": "06:30", "close": "23:00", "closed": false },
+				{ "open": "06:30", "close": "23:00", "closed": false },
+				{ "open": "06:30", "close": "23:00", "closed": false },
+				{ "open": "06:30", "close": "23:00", "closed": false },
+				{ "open": "06:30", "close": "00:30", "closed": false },
+				{ "open": "13:00", "close": "00:30", "closed": false },
+				{ "open": "07:00", "close": "23:00", "closed": false }
+			]
+		},
+		"showStatus": { "type": "boolean", "default": true },
+		"highlightToday": { "type": "boolean", "default": true },
+		"note": { "type": "string", "default": "" }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide" ],
+		"color": { "background": true, "text": true },
+		"spacing": { "padding": true, "margin": true },
+		"typography": { "fontSize": true },
+		"__experimentalBorder": { "radius": true, "color": true, "width": true }
+	},
+	"example": {
+		"attributes": { "showStatus": true, "highlightToday": true }
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style.css",
+	"render": "file:./render.php"
+}

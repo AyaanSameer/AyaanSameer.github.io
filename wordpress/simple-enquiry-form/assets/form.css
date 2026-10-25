@@ -1,0 +1,88 @@
+/*
+ * Simple Enquiry Form. Inherits the theme's fonts and colours; only spacing,
+ * borders and states are set here, so it fits any theme.
+ */
+
+.sef {
+	max-width: 640px;
+}
+
+.sef-form {
+	display: grid;
+	gap: 1.1rem;
+	margin: 0;
+}
+
+.sef-field {
+	display: grid;
+	gap: 0.35rem;
+	margin: 0;
+}
+
+.sef-field label {
+	font-weight: 600;
+	font-size: 0.95em;
+}
+
+.sef-field input,
+.sef-field textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.75rem 0.9rem;
+	font: inherit;
+	color: inherit;
+	background: rgba( 255, 255, 255, 0.85 );
+	border: 1.5px solid color-mix( in srgb, currentColor 28%, transparent );
+	border-radius: 10px;
+}
+
+.sef-field input:focus,
+.sef-field textarea:focus {
+	outline: 2px solid currentColor;
+	outline-offset: 1px;
+	border-color: currentColor;
+}
+
+.sef-field--error input,
+.sef-field--error textarea {
+	border-color: #b42318;
+}
+
+.sef-error {
+	color: #b42318;
+	font-size: 0.9em;
+}
+
+.sef-notice {
+	padding: 0.9rem 1.1rem;
+	border-radius: 10px;
+	margin-bottom: 1.25rem;
+	font-weight: 600;
+}
+
+.sef-notice--success {
+	background: #e6f2e3;
+	color: #1f4d17;
+}
+
+.sef-notice--error {
+	background: #fdecea;
+	color: #8a1c12;
+}
+
+.sef-actions {
+	margin: 0.4rem 0 0;
+}
+
+.sef-button {
+	cursor: pointer;
+}
+
+/* Off-screen rather than display:none, which some bots skip. */
+.sef-hp {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

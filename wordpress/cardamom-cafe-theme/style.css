@@ -1,0 +1,61 @@
+/*
+Theme Name: Cardamom Café
+Theme URI: https://github.com/
+Author: Ayaan Hydross Sameer
+Description: A warm, typographic block theme for a small café in Doha. Built entirely with theme.json, block templates and patterns, so every page can be edited in the Site Editor without code. Cardamom Café is a fictional brand made for this portfolio.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cardamom-cafe
+Tags: block-theme, full-site-editing, one-column, custom-colors, editor-style, food-and-drink
+*/
+
+/*
+ * Almost everything lives in theme.json. These few rules cover what it cannot
+ * express: the hero's dotted texture and the dotted leaders on the menu.
+ */
+
+/* Header, main and footer sit flush; sections set their own spacing. */
+.wp-site-blocks > * {
+	margin-block-start: 0;
+}
+
+.cardamom-hero {
+	background-image: radial-gradient( circle at 1px 1px, color-mix( in srgb, var( --wp--preset--color--espresso ) 14%, transparent ) 1px, transparent 0 );
+	background-size: 18px 18px;
+}
+
+.cardamom-menu-item {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+}
+
+/* Dotted leader between the dish and its price, like a printed menu. */
+.cardamom-menu-item::after {
+	content: "";
+	order: 1;
+	flex: 1;
+	border-bottom: 2px dotted color-mix( in srgb, var( --wp--preset--color--espresso ) 35%, transparent );
+	transform: translateY( -0.3em );
+}
+
+.cardamom-menu-item .cardamom-price {
+	order: 2;
+	font-variant-numeric: tabular-nums;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.cardamom-menu-item strong {
+	font-weight: 600;
+}
+
+/* Keyboard focus is always visible, whatever the block's own styles. */
+:where( a, button, input, textarea, select ):focus-visible {
+	outline: 2px solid var( --wp--preset--color--saffron );
+	outline-offset: 2px;
+}

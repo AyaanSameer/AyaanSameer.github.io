@@ -1,0 +1,24 @@
+/* The sidebar: one clear group per day. */
+
+.ohb-editor-day {
+	padding: 12px 0 16px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.ohb-editor-day:last-child {
+	border-bottom: 0;
+}
+
+.ohb-editor-times {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+/* One hint for the whole week, above the days. */
+.ohb-editor-hint {
+	margin: 0 0 4px;
+	color: #757575;
+	font-size: 12px;
+}

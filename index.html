@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ayaan Hydross Sameer — Full-Stack Developer</title>
+	<meta name="description" content="Full-stack developer in Doha, Qatar. Lead developer of Agricope POS, a multi-tenant point of sale for shops and restaurants, plus internal business systems and WordPress work.">
+	<meta name="author" content="Ayaan Hydross Sameer">
+	<meta name="color-scheme" content="light dark">
+	<meta property="og:title" content="Ayaan Hydross Sameer — Full-Stack Developer">
+	<meta property="og:description" content="Point-of-sale, internal business systems and WordPress work, built in Doha.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ayaansameer.github.io/">
+	<meta property="og:image" content="https://ayaansameer.github.io/assets/img/og-card.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Ayaan Hydross Sameer, full-stack developer in Doha">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://ayaansameer.github.io/">
+	<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="css/styles.css">
+	<script>
+		// Apply a saved theme before the page paints, so it never flashes.
+		try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+	</script>
+</head>
+<body>
+	<a class="skip" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="wrap header-inner">
+			<a class="brand" href="#top" aria-label="Ayaan Hydross Sameer, back to top">
+				<span class="brand-mark" aria-hidden="true">AS</span>
+				<span class="brand-name">Ayaan Hydross Sameer</span>
+			</a>
+			<nav class="nav" aria-label="Sections">
+				<a href="#work">Work</a>
+				<a href="#wordpress">WordPress</a>
+				<a href="#more">More</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<div class="header-actions">
+				<button class="icon-btn" type="button" id="theme-toggle" aria-label="Switch to dark theme">
+					<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+					<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+				</button>
+				<a class="btn btn-small" href="assets/Ayaan_Hydross_Sameer_CV.pdf" download>CV</a>
+			</div>
+		</div>
+	</header>
+
+	<main id="main">
+		<!-- Intro -->
+		<section class="hero" id="top">
+			<div class="wrap hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow">Full-stack developer · Doha, Qatar</p>
+					<h1>I build the systems a business runs on&nbsp;— <span class="accent">tills, kitchens and back offices.</span></h1>
+					<p class="lede">I'm the lead developer of <strong>Agricope POS</strong>, a point of sale for shops and restaurants in Qatar. Before that I built the queue, customer-service and stock systems a school-uniform supplier used every day. I design the screens and workflows in Figma, then build them with React, TypeScript, Node.js and PostgreSQL.</p>
+					<div class="hero-ctas">
+						<a class="btn" href="#work">See the work</a>
+						<a class="btn btn-ghost" href="#contact">Get in touch</a>
+					</div>
+				</div>
+				<aside class="hero-card" aria-label="At a glance">
+					<img class="hero-photo" src="assets/img/ayaan.webp" width="347" height="409" alt="Portrait of Ayaan Hydross Sameer">
+					<dl class="facts">
+						<div><dt>Now</dt><dd>Lead developer, Agricope POS</dd></div>
+						<div><dt>Stack</dt><dd>React · TypeScript · Node.js · PostgreSQL</dd></div>
+						<div><dt>Design</dt><dd>Figma: screens, systems, workflows</dd></div>
+						<div><dt>Education</dt><dd>B.Tech, Information Technology (CUSAT)</dd></div>
+					</dl>
+				</aside>
+			</div>
+		</section>
+
+		<!-- Featured case study -->
+		<section class="section" id="work" aria-labelledby="work-title">
+			<div class="wrap">
+				<header class="section-head">
+					<p class="eyebrow">Featured work</p>
+					<h2 id="work-title">Agricope POS</h2>
+					<p class="section-sub">A multi-tenant point of sale for shops and restaurants in Qatar: one deployment, many businesses, each with branches, brands, staff on 4-digit PINs, a catalogue, cash drawers and bilingual English–Arabic bills. Any browser becomes a till.</p>
+				</header>
+
+				<ul class="meta-row" aria-label="Project details">
+					<li><span>Role</span>Lead developer</li>
+					<li><span>When</span>Aug 2026 – present</li>
+					<li><span>Team</span>Three developers</li>
+					<li><span>Status</span>V2 on staging, V1 live</li>
+				</ul>
+
+				<div class="gallery" data-gallery>
+					<figure class="shot shot-main">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-register.webp" data-caption="The register at a restaurant till: order methods, categories, the bill and Charge.">
+							<img src="assets/img/work/pos-register.webp" width="1600" height="900" alt="Agricope POS register screen with product tiles, a bill of six items and a Charge button" loading="lazy">
+						</button>
+						<figcaption>Register — the till's main screen at 1366 × 768</figcaption>
+					</figure>
+					<figure class="shot">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-bills.webp" data-caption="Open bills: a dine-in tab with items sent to the kitchen, service charge and Pay.">
+							<img src="assets/img/work/pos-bills.webp" width="1600" height="900" alt="Open bills screen showing a table's tab with items, totals and a Pay button" loading="lazy">
+						</button>
+						<figcaption>Open bills</figcaption>
+					</figure>
+					<figure class="shot">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-kitchen.webp" data-caption="The kitchen screen: tickets by station, timed, bumped when plated.">
+							<img src="assets/img/work/pos-kitchen.webp" width="1600" height="900" alt="Kitchen display with a ticket for table T3, its age and a Done button" loading="lazy">
+						</button>
+						<figcaption>Kitchen screen</figcaption>
+					</figure>
+					<figure class="shot">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-office-home.webp" data-caption="Back office home: takings, sales by hour, open bills, drawers and what needs the owner's attention.">
+							<img src="assets/img/work/pos-office-home.webp" width="1600" height="1000" alt="Back office home with takings, sales by hour chart, drawers and alerts" loading="lazy">
+						</button>
+						<figcaption>Back office</figcaption>
+					</figure>
+					<figure class="shot">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-office-stock.webp" data-caption="Stock & recipes: ingredients, units, costs per gram or piece, and where each is used.">
+							<img src="assets/img/work/pos-office-stock.webp" width="1600" height="1000" alt="Stock and recipes list of ingredients with unit costs and suppliers" loading="lazy">
+						</button>
+						<figcaption>Stock &amp; recipe costing</figcaption>
+					</figure>
+					<figure class="shot shot-phone">
+						<button type="button" class="shot-btn" data-full="assets/img/work/pos-phone.webp" data-caption="The same till on a phone: its own bottom navigation and a sale bar.">
+							<img src="assets/img/work/pos-phone.webp" width="600" height="1298" alt="Agricope POS register on a phone with a bottom navigation bar" loading="lazy">
+						</button>
+						<figcaption>On a phone</figcaption>
+					</figure>
+				</div>
+				<p class="note">Screenshots from the system's demo business with generated sales history. The codebase is private and commercial.</p>
+
+				<div class="case-grid">
+					<div class="case-block">
+						<h3>What I built</h3>
+						<ul class="ticks">
+							<li><strong>The platform, end to end</strong>: register and split payments, receipts and barcode scanning, tables and tabs, a kitchen display, customers and credit, cash drawers with X and Z reports, refunds, stock and recipe costing.</li>
+							<li><strong>Multi-tenancy</strong>: every business sees only its own rows; the business id comes from the token, never from the request.</li>
+							<li><strong>Offline selling</strong>: the till keeps taking cash and card with the Wi-Fi down, queues sales in IndexedDB and sends them when it reconnects, each with its own id so nothing is counted twice.</li>
+							<li><strong>V2, the redesign</strong>: every screen rebuilt to the Figma file across till, office and phone layouts, with feature switches, a till lock, loyalty points, own delivery and per-brand prices — and nothing V1 did dropped.</li>
+						</ul>
+					</div>
+					<div class="case-block">
+						<h3>Engineering I'm proud of</h3>
+						<ul class="ticks">
+							<li><strong>Money that never drifts</strong>: amounts are decimal strings end to end, every sum runs through one shared module the till and the API both compile, and the server prices every order itself.</li>
+							<li><strong>Fixing a live outage</strong>: payments and approvals failed in the browser because the API's CORS list refused two headers. Every header the app sends now lives in one shared list, with a test on each side.</li>
+							<li><strong>Approvals bound to the exact request</strong>: a manager approves from their phone or a PIN pad, and the token only works for that one discount, void or refund.</li>
+							<li><strong>A security pass</strong>: locked tills revoke their tokens on the server, wrong PINs are counted per business, and a customer's e-receipt link shows only what the bill prints.</li>
+						</ul>
+					</div>
+				</div>
+
+				<ul class="chips" aria-label="Technologies">
+					<li>React 19</li><li>TypeScript</li><li>Vite</li><li>TanStack Query</li><li>Node.js · Fastify</li><li>PostgreSQL</li><li>Raw SQL, 60 migrations</li><li>Vitest</li><li>Playwright</li><li>Docker · Railway</li><li>Cloudflare</li><li>Neon</li><li>Figma</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Internal systems -->
+		<section class="section section-alt" aria-labelledby="systems-title">
+			<div class="wrap">
+				<header class="section-head">
+					<p class="eyebrow">Jul – Oct 2026 · Noble House Trading &amp; Services</p>
+					<h2 id="systems-title">Internal systems for a busy retailer</h2>
+					<p class="section-sub">A supplier of school uniforms to international schools across Qatar. I gathered requirements from staff and management, designed in Figma, built, deployed and supported these.</p>
+				</header>
+				<div class="cards cards-3">
+					<article class="card">
+						<p class="card-kicker">PHP · MySQL · JavaScript</p>
+						<h3>Queue &amp; ticketing system</h3>
+						<p>Replaced manual queuing in peak season: tickets at reception, routing to departments, counter calling and a TV display with audio alerts. In daily use at two branches.</p>
+						<ul class="mini">
+							<li>Personal Shopper assignment: longest-idle first, with cooldowns</li>
+							<li>Six staff roles; supervisor console</li>
+							<li>Reports with an auditable outlier filter</li>
+						</ul>
+					</article>
+					<article class="card">
+						<p class="card-kicker">Node.js · React · PostgreSQL</p>
+						<h3>Customer service system</h3>
+						<p>Logs, tracks and resolves customer enquiries and orders, with a mobile screen for delivery drivers and a controlled release process through GitHub.</p>
+						<ul class="mini">
+							<li>Driver view for jobs on the road</li>
+							<li>Cloud PostgreSQL (Neon)</li>
+							<li>One-click deploys to a company subdomain</li>
+						</ul>
+					</article>
+					<article class="card">
+						<p class="card-kicker">Node.js · SQLite · Cin7 Omni · Excel</p>
+						<h3>Stock data &amp; mapping tools</h3>
+						<p>Consolidated a 7,500+ SKU file covering 18 schools into 600+ products, then built a product-to-school matrix and stock browser to plan a second location.</p>
+						<ul class="mini">
+							<li>Change log, undo and dated backups</li>
+							<li>350+ brochure codes cross-checked</li>
+							<li>Plus a task manager and a 20-device shopping list</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- WordPress -->
+		<section class="section" id="wordpress" aria-labelledby="wp-title">
+			<div class="wrap">
+				<header class="section-head">
+					<p class="eyebrow">WordPress</p>
+					<h2 id="wp-title">A theme, a plugin and a block</h2>
+					<p class="section-sub">Three small projects built together as one demo site for a fictional Doha café. Each drops into WordPress with no build step; the code is in this repository.</p>
+				</header>
+
+				<div class="wp-list">
+					<article class="wp-item">
+						<button type="button" class="shot-btn wp-shot" data-full="assets/img/work/wp-cafe-home.webp" data-caption="Cardamom Café: hero, menu with dotted price leaders, story and a call to action.">
+							<img src="assets/img/work/wp-cafe-home.webp" width="1600" height="1000" alt="Cardamom Café home page with a large serif headline, menu columns and a call to action" loading="lazy">
+						</button>
+						<div class="wp-copy">
+							<p class="card-kicker">Block theme</p>
+							<h3>Cardamom Café</h3>
+							<p>A typographic block theme designed in <code>theme.json</code>: palette, self-hosted fonts, a fluid type scale, templates, parts and four PHP patterns. The owner can change everything from the Site Editor.</p>
+							<ul class="chips chips-small"><li>theme.json v3</li><li>Block patterns</li><li>Site Editor</li><li>i18n</li></ul>
+							<a class="link-arrow" href="wordpress/cardamom-cafe-theme/README.md" data-repo-path="wordpress/cardamom-cafe-theme">View the code</a>
+						</div>
+					</article>
+
+					<article class="wp-item">
+						<button type="button" class="shot-btn wp-shot" data-full="assets/img/work/wp-hours-editor.webp" data-caption="The Opening Hours block in the editor: live server preview and the weekly hours sidebar.">
+							<img src="assets/img/work/wp-hours-editor.webp" width="1600" height="1000" alt="WordPress block editor with the Opening Hours block selected, showing Open now and the weekly hours sidebar" loading="lazy">
+						</button>
+						<div class="wp-copy">
+							<p class="card-kicker">Gutenberg block</p>
+							<h3>Opening Hours</h3>
+							<p>A dynamic block with a live "Open now · closes at 12:30 am" badge in the site's time zone, today highlighted, and late nights past midnight handled. No build step; nine tests on the time logic.</p>
+							<ul class="chips chips-small"><li>block.json</li><li>Server render</li><li>ServerSideRender</li><li>PHP tests</li></ul>
+							<a class="link-arrow" href="wordpress/opening-hours-block/README.md" data-repo-path="wordpress/opening-hours-block">View the code</a>
+						</div>
+					</article>
+
+					<article class="wp-item">
+						<button type="button" class="shot-btn wp-shot" data-full="assets/img/work/wp-form.webp" data-caption="Simple Enquiry Form: errors tied to their fields, with what the visitor typed kept.">
+							<img src="assets/img/work/wp-form.webp" width="1600" height="1000" alt="Contact page with an enquiry form showing accessible error messages" loading="lazy">
+						</button>
+						<div class="wp-copy">
+							<p class="card-kicker">Plugin</p>
+							<h3>Simple Enquiry Form</h3>
+							<p>A shortcode form that saves messages to a private post type and emails them. Nonces, sanitising and escaping, header-injection and open-redirect guards, and spam stopped without a CAPTCHA.</p>
+							<ul class="chips chips-small"><li>Custom post type</li><li>Settings API</li><li>Security</li><li>Accessible errors</li></ul>
+							<a class="link-arrow" href="wordpress/simple-enquiry-form/README.md" data-repo-path="wordpress/simple-enquiry-form">View the code</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- More -->
+		<section class="section section-alt" id="more" aria-labelledby="more-title">
+			<div class="wrap">
+				<header class="section-head">
+					<p class="eyebrow">Earlier</p>
+					<h2 id="more-title">Before that</h2>
+				</header>
+				<div class="cards cards-2">
+					<article class="card">
+						<p class="card-kicker">Feb 2025 – Mar 2026 · Self-employed</p>
+						<h3>Freelance web design &amp; front-end</h3>
+						<p>Responsive websites in HTML, CSS and JavaScript for clients, from first conversation to launch and the updates after it.</p>
+					</article>
+					<article class="card">
+						<p class="card-kicker">Dec 2023 – May 2024 · React · PHP · SQL</p>
+						<h3>Live sign language translator</h3>
+						<p>A two-way communication app: webcam recognition turns hand gestures into text in real time, and typed text is shown back as signs.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- About + skills -->
+		<section class="section" id="about" aria-labelledby="about-title">
+			<div class="wrap about-grid">
+				<div>
+					<p class="eyebrow">About</p>
+					<h2 id="about-title">Hi, I'm Ayaan.</h2>
+					<p>I'm an Information Technology graduate (B.Tech, Cochin University of Science and Technology) who went to school in Doha and now builds software for businesses here. I like work where a screen meets a real counter: a cashier with a queue, a kitchen at rush hour, an owner closing the day.</p>
+					<p>I start with the people who'll use it, sketch the flow in Figma, and keep going until it runs reliably in production — tests, backups and all. I use AI-assisted development (Claude) as part of that workflow.</p>
+					<p class="langs"><strong>Languages:</strong> English (fluent), Malayalam (fluent), Hindi (conversational)</p>
+				</div>
+				<div class="skills">
+					<div class="skill-group">
+						<h3>Build</h3>
+						<p>TypeScript, JavaScript, React, Node.js, Fastify, PHP, HTML, CSS, Tailwind CSS, WordPress</p>
+					</div>
+					<div class="skill-group">
+						<h3>Data</h3>
+						<p>PostgreSQL, MySQL, SQLite, SQL, Cin7 Omni, Excel, Power BI</p>
+					</div>
+					<div class="skill-group">
+						<h3>Ship</h3>
+						<p>Docker, Railway, Cloudflare, Neon, cPanel, Git, GitHub, CI/CD, Vitest, Playwright</p>
+					</div>
+					<div class="skill-group">
+						<h3>Design &amp; support</h3>
+						<p>Figma, requirements gathering, TCP/IP, DNS, DHCP, LAN/WAN, Windows troubleshooting</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section contact" id="contact" aria-labelledby="contact-title">
+			<div class="wrap contact-inner">
+				<div>
+					<p class="eyebrow eyebrow-on-dark">Contact</p>
+					<h2 id="contact-title">Looking for a developer in Doha?</h2>
+					<p>I'm open to software development, application support and IT roles. The quickest way to reach me is email.</p>
+				</div>
+				<ul class="contact-list">
+					<li><span>Email</span><a href="mailto:ayaansameer.002@gmail.com">ayaansameer.002@gmail.com</a></li>
+					<li><span>Phone</span><a href="tel:+97433272702">+974 3327 2702</a></li>
+					<li><span>LinkedIn</span><a href="https://www.linkedin.com/in/ayaan-hydross-sameer" rel="noopener">linkedin.com/in/ayaan-hydross-sameer</a></li>
+					<li><span>CV</span><a href="assets/Ayaan_Hydross_Sameer_CV.pdf" download>Download PDF</a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap footer-inner">
+			<p>© <span id="year">2026</span> Ayaan Hydross Sameer · Doha, Qatar</p>
+			<a href="#top">Back to top</a>
+		</div>
+	</footer>
+
+	<dialog class="lightbox" id="lightbox" aria-label="Screenshot">
+		<form method="dialog"><button class="lightbox-close" aria-label="Close">×</button></form>
+		<img id="lightbox-img" alt="">
+		<p id="lightbox-caption"></p>
+	</dialog>
+
+	<script src="js/main.js" defer></script>
+</body>
+</html>

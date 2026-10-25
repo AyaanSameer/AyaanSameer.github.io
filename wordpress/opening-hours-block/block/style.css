@@ -1,0 +1,85 @@
+/*
+ * Opening Hours. Colours come from the theme (currentColor and the block's
+ * own colour settings); the badge's green and red are the only fixed ones.
+ */
+
+.wp-block-ayaan-opening-hours {
+	max-width: 520px;
+	font-variant-numeric: tabular-nums;
+}
+
+.ohb-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	margin: 0 0 1rem;
+	padding: 0.4rem 0.85rem;
+	border-radius: 999px;
+	font-size: 0.95em;
+}
+
+.ohb-status--open {
+	background: #e3f1df;
+	color: #1d4a14;
+}
+
+.ohb-status--closed {
+	background: #f8e5e2;
+	color: #7c1d12;
+}
+
+.ohb-dot {
+	width: 0.55rem;
+	height: 0.55rem;
+	border-radius: 50%;
+	background: currentColor;
+}
+
+.ohb-when {
+	opacity: 0.85;
+}
+
+.ohb-list {
+	margin: 0;
+}
+
+.ohb-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.6rem 0.75rem;
+	border-bottom: 1px solid color-mix( in srgb, currentColor 14%, transparent );
+}
+
+.ohb-row:last-child {
+	border-bottom: 0;
+}
+
+.ohb-row dt,
+.ohb-row dd {
+	margin: 0;
+}
+
+.ohb-row.is-today {
+	background: color-mix( in srgb, currentColor 7%, transparent );
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.ohb-today {
+	margin-left: 0.4rem;
+	padding: 0.05rem 0.45rem;
+	border-radius: 999px;
+	font-size: 0.75em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	border: 1px solid currentColor;
+	vertical-align: 0.1em;
+}
+
+.ohb-note {
+	margin: 0.9rem 0 0;
+	font-size: 0.9em;
+	opacity: 0.8;
+}
